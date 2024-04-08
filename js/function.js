@@ -42,7 +42,7 @@ function myCalc() {
   } else if (operatorSelected === '÷') {
     const divide = numDisplay / lastNum;
     displayElem.innerHTML = divide;
-    if (numDisplay / 0 ) {
+    if (lastNum === 0 ) {
       displayElem.innerHTML = 'Error';
     }
   }

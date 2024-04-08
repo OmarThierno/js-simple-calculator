@@ -75,7 +75,8 @@ header img {
 }
 
 .button-number,
-.text  {
+.text,
+#equal-symbol  {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,7 +84,8 @@ header img {
   border: none;
 }
 
-.button-number {
+.button-number,
+#equal-symbol {
   padding: 30px 40px;
   font-size: 30px;
   background-color: #BBBBBB;
@@ -106,6 +108,7 @@ header img {
   font-size: 30px;
 }
 
-.bg-orange {
+.bg-orange,
+#equal-symbol {
   background-color: #FF9F0A;
 }

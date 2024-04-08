@@ -15,13 +15,38 @@ function takeValueConcatenates() {
 }
 
 function saveOperatorOperand() {
-  const numDisplay = parseInt(displayElem.innerHTML);
-  const operatorSelected = this.innerHTML;
-  
-  displayElem.innerHTML = 0;
+  numDisplay = parseInt(displayElem.innerHTML);
+  operatorSelected = this.innerHTML;
   console.log(numDisplay);
   console.log(operatorSelected);
+
+  displayElem.innerHTML = 0;
+
+  return [numDisplay, operatorSelected];
 }
 
+function myCalc() {
+  const lastNum = parseInt(displayElem.innerHTML)
+  numDisplay
+  operatorSelected
+  if (operatorSelected === '+') {
+    const sum = numDisplay + lastNum;
+    console.log(sum); // debug
+    displayElem.innerHTML = sum;
+  } else if (operatorSelected === '-') {
+    const subtraction = numDisplay - lastNum;
+    displayElem.innerHTML = subtraction;
+  } else if (operatorSelected === '*') {
+    const multiplication = numDisplay * lastNum;
+    displayElem.innerHTML = multiplication;
+  } else if (operatorSelected === '÷') {
+    const divide = numDisplay / lastNum;
+    displayElem.innerHTML = divide;
+    if (numDisplay / 0 ) {
+      displayElem.innerHTML = 'Error';
+    }
+  }
+
+}
 
 

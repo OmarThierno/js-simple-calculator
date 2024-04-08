@@ -7,6 +7,15 @@ const displayElem = document.querySelector('.display-number');
 const operatorElem = document.querySelectorAll('.operator');
 // console.log(operatorElem);
 
+const equalSymbolElem = document.getElementById('equal-symbol');
+console.log(equalSymbolElem);
+
+let numDisplay = 0;
+
+let operatorSelected = '';
+
+console.log(numDisplay, operatorSelected)
+
 // MILESTONE 1 
 for (let i = 0; i < numElem.length; i++) {
   // console.log(numElem[i]); // debug
@@ -19,4 +28,8 @@ for (let i = 0; i < operatorElem.length; i++) {
   operatorElem[i].addEventListener('click', saveOperatorOperand);
 }
 
-// console.log(displayElem.innerHTML);
+// MILESTONE 3
+equalSymbolElem.addEventListener('click', myCalc) 
+
+  
+

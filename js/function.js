@@ -5,7 +5,7 @@
  */
 function takeValueConcatenates() {
   const ElemValue = this.innerHTML
-  console.log(this.innerHTML);
+  // console.log(this.innerHTML);
 
   if (displayElem.innerHTML == 0) {
     displayElem.innerHTML = ElemValue;
@@ -13,4 +13,15 @@ function takeValueConcatenates() {
     displayElem.innerHTML += ElemValue;
   }
 }
+
+function saveOperatorOperand() {
+  const numDisplay = parseInt(displayElem.innerHTML);
+  const operatorSelected = this.innerHTML;
+  
+  displayElem.innerHTML = 0;
+  console.log(numDisplay);
+  console.log(operatorSelected);
+}
+
+
 

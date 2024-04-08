@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Common */
+body {
+  font-family: 'Seven Segment';
+}
+
+/* main */
+main {
+  background-color:#ECECEC;
+  width: 500px;
+  margin: 40px auto;
+  border: 2px solid #D9D9D9;
+  border-radius: 10px;
+}
+
+/* header  */
+header {
+  height: 150px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 700px;
+}
+
+/* display */
+.display {
+  background-color: black;
+  height: 120px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+}
+
+.display-number {
+  color: #09D297;
+  font-size: 80px;
+}
+
+/* tastiera */
+.container-tastiera {
+  display: flex;
+  padding: 30px;
+}
+
+.button-container,
+.operator-container {
+  display: flex;
+  
+}
+
+.button-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.operator-container {
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+.button-flex {
+  width: calc(100% / 3);
+  padding: 10px;
+}
+
+.button-number,
+.text  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+}
+
+.button-number {
+  padding: 30px 40px;
+  font-size: 30px;
+  background-color: #BBBBBB;
+  
+  width: 100%;
+}
+
+.forse {
+  padding: 10px 0;
+}
+
+.button-operator {
+  width: calc(100% / 5);
+  padding: 15px 30px;
+  width: 100%;
+  background-color: #77A8B0;
+}
+
+.text {
+  font-size: 30px;
+}
+
+.bg-orange {
+  background-color: #FF9F0A;
+}

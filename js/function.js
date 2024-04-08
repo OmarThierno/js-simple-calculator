@@ -46,7 +46,11 @@ function myCalc() {
       displayElem.innerHTML = 'Error';
     }
   }
-
 }
 
+function resetDis() {
+  numDisplay = 0;
+  operatorSelected = '';
+  displayElem.innerHTML = 0;
+}
 

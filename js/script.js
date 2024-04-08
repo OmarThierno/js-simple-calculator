@@ -1,3 +1,7 @@
+let numDisplay = 0;
+
+let operatorSelected = '';
+
 const numElem = document.querySelectorAll('.button-number');
 // console.log(numElem);
 
@@ -10,11 +14,7 @@ const operatorElem = document.querySelectorAll('.operator');
 const equalSymbolElem = document.getElementById('equal-symbol');
 console.log(equalSymbolElem);
 
-let numDisplay = 0;
-
-let operatorSelected = '';
-
-console.log(numDisplay, operatorSelected)
+const resetElem = document.getElementById('reset');
 
 // MILESTONE 1 
 for (let i = 0; i < numElem.length; i++) {
@@ -31,5 +31,7 @@ for (let i = 0; i < operatorElem.length; i++) {
 // MILESTONE 3
 equalSymbolElem.addEventListener('click', myCalc) 
 
+// MILESTONE 4
+resetElem.addEventListener('click', resetDis);
   
 

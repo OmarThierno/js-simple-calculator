@@ -36,7 +36,7 @@ function myCalc() {
   } else if (operatorSelected === '-') {
     const subtraction = numDisplay - lastNum;
     displayElem.innerHTML = subtraction;
-  } else if (operatorSelected === '*') {
+  } else if (operatorSelected === 'x') {
     const multiplication = numDisplay * lastNum;
     displayElem.innerHTML = multiplication;
   } else if (operatorSelected === '÷') {

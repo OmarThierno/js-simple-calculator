@@ -12,7 +12,7 @@ const operatorElem = document.querySelectorAll('.operator');
 // console.log(operatorElem);
 
 const equalSymbolElem = document.getElementById('equal-symbol');
-console.log(equalSymbolElem);
+// console.log(equalSymbolElem);
 
 const resetElem = document.getElementById('reset');
 
